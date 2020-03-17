@@ -1,14 +1,13 @@
 const Sequelize = require('sequelize')
 
 const sequelize = new Sequelize(
-  process.env.DB_NAME,
-  process.env.DB_USER,
-  process.env.DB_PASS,
-  {
-    host: process.env.DB_HOST,
-    dialect: process.env.DB_DIALECT,
-    timestamps: false
-  }
+  sequelize = new Sequelize(process.env.HOST, {
+    dialect:  'postgres',
+    protocol: 'postgres',
+    port:     match[4],
+    host:     match[3],
+    logging:  true //false
+  })
 )
 
 sequelize
