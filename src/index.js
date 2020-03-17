@@ -4,7 +4,7 @@ const routers = require('./routers')
 const path = require('path')
 
 const app = express()
-const port = process.env.WEB_SERVER_PORT || 3000
+const port = process.env.PORT || 3000
 
 const sequelize = require('./db/sequelize')
 const models = require('./models') // load models before sync
